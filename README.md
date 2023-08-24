@@ -6,17 +6,20 @@ Um projeto Symfony com uma funcionalidade de login e dashboard.
 
 - PHP 7.4 ou superior
 - Composer
+- Docker
+- Docker Compose
 - Banco de dados (MySQL, PostgreSQL, SQLite, etc.)
 
 ## Instalação
 
 1. Clone o repositório: `git clone https://github.com/SEU_USUARIO/symfony_dashboard.git`
 2. Navegue até o diretório: `cd symfony_dashboard`
-3. Instale as dependências: `composer install`
-4. Configure a conexão com o banco de dados em `.env`
-5. Crie o banco de dados: `bin/console doctrine:database:create`
-6. Execute as migrações: `bin/console doctrine:migrations:migrate`
-7. Inicie o servidor Symfony: `symfony serve`
+3. Execute o Docker Compose: `docker-compose up`
+4. Instale as dependências: `composer install`
+5. Configure a conexão com o banco de dados em `.env`
+6. Crie o banco de dados: `bin/console doctrine:database:create`
+7. Execute as migrações: `bin/console doctrine:migrations:migrate`
+8. Inicie o servidor Symfony: `symfony serve`
 
 ## Uso
 
